@@ -1,0 +1,78 @@
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+    width: 57.8125rem;
+    height: 31.25rem;
+    border-radius: 0.625rem;
+
+    @include media-query(mobile) {
+        height: auto;
+        width: auto;
+        grid-template-columns: 1fr;
+        padding: 5rem 1.875rem;
+    }
+
+    @each $key, $color in $cardColors {
+        .card--#{$key} {
+            background-color: $color;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            width: 100%;
+            padding: 0.625rem 3.125rem;
+
+            @include media-query(mobile) {
+                height: 28.125rem;
+
+                &:first-of-type {
+                    border-radius: 0.625rem 0.625rem 0 0;
+                }
+
+                &:last-of-type {
+                    border-radius: 0 0 0.625rem 0.625rem;
+                }
+            }
+
+            .icon {
+                background-size: cover;
+                background-repeat: no-repeat;
+                max-width: 30%;
+                height: auto;
+            }
+
+            .title {
+                font-family: 'Big Shoulders Display', cursive;
+                color: $colorLightGray;
+                font-size: 2rem;
+                margin-top: -2.5rem;
+            }
+
+            .description {
+                font-family: 'Lexend Deca', sans-serif;
+                color: $colorTransparentWhite;
+                font-size: 0.9375rem;
+                line-height: 1.75;
+                margin-top: -2.5rem;
+            }
+
+            button {
+                font-family: 'Lexend Deca', sans-serif;
+                color: $color;
+                border: 0.125rem solid $colorLightGray;
+                cursor: pointer;
+                width: 9.375rem;
+                height: 2.8125rem;
+                border-radius: 1.875rem;
+                transition: all ease 0.2s;
+
+                &:hover {
+                    background: none;
+                    color: $colorLightGray;
+                    border: 0.125rem solid $colorLightGray;
+                }
+            }
+        }
+    }
+}

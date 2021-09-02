@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorLightGray;
+    height: 100vh;
+
+    .attribution {
+        position: absolute;
+        bottom: 1%;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    @include media-query(mobile) {
+        height: auto;
+
+        .attribution {
+            position: relative;
+            text-align: center;
+        }
+    }
+}

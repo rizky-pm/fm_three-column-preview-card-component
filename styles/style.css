@@ -1,0 +1,277 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+  height: 100vh;
+}
+
+body .attribution {
+  position: absolute;
+  bottom: 1%;
+}
+
+body .attribution a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 23.4375rem) {
+  body {
+    height: auto;
+  }
+  body .attribution {
+    position: relative;
+    text-align: center;
+  }
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+  width: 57.8125rem;
+  height: 31.25rem;
+  border-radius: 0.625rem;
+}
+
+@media only screen and (max-width: 23.4375rem) {
+  .card {
+    height: auto;
+    width: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 5rem 1.875rem;
+  }
+}
+
+.card .card--1 {
+  background-color: #e38826;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  padding: 0.625rem 3.125rem;
+}
+
+@media only screen and (max-width: 23.4375rem) {
+  .card .card--1 {
+    height: 28.125rem;
+  }
+  .card .card--1:first-of-type {
+    border-radius: 0.625rem 0.625rem 0 0;
+  }
+  .card .card--1:last-of-type {
+    border-radius: 0 0 0.625rem 0.625rem;
+  }
+}
+
+.card .card--1 .icon {
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 30%;
+  height: auto;
+}
+
+.card .card--1 .title {
+  font-family: 'Big Shoulders Display', cursive;
+  color: #f2f2f2;
+  font-size: 2rem;
+  margin-top: -2.5rem;
+}
+
+.card .card--1 .description {
+  font-family: 'Lexend Deca', sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  margin-top: -2.5rem;
+}
+
+.card .card--1 button {
+  font-family: 'Lexend Deca', sans-serif;
+  color: #e38826;
+  border: 0.125rem solid #f2f2f2;
+  cursor: pointer;
+  width: 9.375rem;
+  height: 2.8125rem;
+  border-radius: 1.875rem;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.card .card--1 button:hover {
+  background: none;
+  color: #f2f2f2;
+  border: 0.125rem solid #f2f2f2;
+}
+
+.card .card--2 {
+  background-color: #006970;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  padding: 0.625rem 3.125rem;
+}
+
+@media only screen and (max-width: 23.4375rem) {
+  .card .card--2 {
+    height: 28.125rem;
+  }
+  .card .card--2:first-of-type {
+    border-radius: 0.625rem 0.625rem 0 0;
+  }
+  .card .card--2:last-of-type {
+    border-radius: 0 0 0.625rem 0.625rem;
+  }
+}
+
+.card .card--2 .icon {
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 30%;
+  height: auto;
+}
+
+.card .card--2 .title {
+  font-family: 'Big Shoulders Display', cursive;
+  color: #f2f2f2;
+  font-size: 2rem;
+  margin-top: -2.5rem;
+}
+
+.card .card--2 .description {
+  font-family: 'Lexend Deca', sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  margin-top: -2.5rem;
+}
+
+.card .card--2 button {
+  font-family: 'Lexend Deca', sans-serif;
+  color: #006970;
+  border: 0.125rem solid #f2f2f2;
+  cursor: pointer;
+  width: 9.375rem;
+  height: 2.8125rem;
+  border-radius: 1.875rem;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.card .card--2 button:hover {
+  background: none;
+  color: #f2f2f2;
+  border: 0.125rem solid #f2f2f2;
+}
+
+.card .card--3 {
+  background-color: #004241;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  padding: 0.625rem 3.125rem;
+}
+
+@media only screen and (max-width: 23.4375rem) {
+  .card .card--3 {
+    height: 28.125rem;
+  }
+  .card .card--3:first-of-type {
+    border-radius: 0.625rem 0.625rem 0 0;
+  }
+  .card .card--3:last-of-type {
+    border-radius: 0 0 0.625rem 0.625rem;
+  }
+}
+
+.card .card--3 .icon {
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 30%;
+  height: auto;
+}
+
+.card .card--3 .title {
+  font-family: 'Big Shoulders Display', cursive;
+  color: #f2f2f2;
+  font-size: 2rem;
+  margin-top: -2.5rem;
+}
+
+.card .card--3 .description {
+  font-family: 'Lexend Deca', sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  margin-top: -2.5rem;
+}
+
+.card .card--3 button {
+  font-family: 'Lexend Deca', sans-serif;
+  color: #004241;
+  border: 0.125rem solid #f2f2f2;
+  cursor: pointer;
+  width: 9.375rem;
+  height: 2.8125rem;
+  border-radius: 1.875rem;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.card .card--3 button:hover {
+  background: none;
+  color: #f2f2f2;
+  border: 0.125rem solid #f2f2f2;
+}
+/*# sourceMappingURL=style.css.map */
