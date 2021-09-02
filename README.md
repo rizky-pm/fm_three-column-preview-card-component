@@ -7,6 +7,7 @@
 -   [My process](#my-process)
     -   [Built with](#built-with)
     -   [Useful resources](#useful-resources)
+    -   [Note](#note)
 -   [Author](#author)
 
 ## Overview
@@ -20,14 +21,14 @@ Users should be able to:
 
 ### Screenshot
 
-![Preview Desktop]('./result-screenshots/preview-desktop.png')
+![Preview Desktop](./result-screenshots/preview-desktop.png)
 
-![Preview Mobile]('./result-screenshots/preview-mobile.png')
+![Preview Mobile](./result-screenshots/preview-mobile.png)
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Github](https://github.com/rizky-pm/fm_three-column-preview-card-component)
+-   Live Site URL: [Github Pages](https://rizky-pm.github.io/fm_three-column-preview-card-component/)
 
 ## My process
 
@@ -43,6 +44,10 @@ Users should be able to:
 ### Useful resources
 
 -   [CSS Grid System](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+### Note
+
+-   Somehow `css .card {padding-bottom} ` does not work on mobile media query at Google Chrome, but when i use Microsoft Edge it works. Any advice will be appreciate.
 
 ## Author
 
